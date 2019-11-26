@@ -1,0 +1,14 @@
+$(document).ready(function(){
+    $('#username').focus(function(){
+        $('.username-group').addClass('focus');
+    });
+    $('#username').blur(function(){
+        $('.username-group').removeClass('focus');
+    });
+     $('#password').focus(function(){
+        $('.password-group').addClass('focus');
+    });
+     $('#password').blur(function(){
+        $('.password-group').removeClass('focus');
+    });
+});

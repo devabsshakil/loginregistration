@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i|PT+Sans&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Lato','sans-sarif';
+}
+.img-bg{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+}
+.register-area .form-group{
+    margin-bottom: 15px;
+}
+.lg-inp-gp{
+    display: flex;
+    flex-direction: row;
+}
+.lg-inp-gp .i{
+    width:5%;
+}
+.lg-inp-gp .input-gp{
+    width: 95%;
+}
+.input-gp{
+    position: relative;
+}
+.input-gp h4{
+    position: absolute;
+    top:4px;
+    left: 10px;
+}
+.i i{
+    font-size: 30px;
+    
+}
+.focus h4{
+    top:-30px;
+    color:#6c63ff;
+}
+.lg-inp-gp{
+    margin-bottom: 30px;
+}
+.l-inp-box{
+    width:100%;
+    padding: 10px 15px;
+    border:none;
+    outline: none;
+    font-size: 18px;
+    border-bottom: 1px solid #6c63ff;
+    margin-bottom: 15px;
+        
+}
