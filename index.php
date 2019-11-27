@@ -1,3 +1,6 @@
+<?php include'backend/Database.php';
+$db=new Database();
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -32,6 +35,7 @@
                               </div>
                               <div class="col-10">
                                    <input type="text" name="name" id="name" class="form-control">
+                                   <div class="name-error val-error"></div>
                               </div>
                           </div>  
                        </div>
@@ -42,6 +46,7 @@
                               </div>
                               <div class="col-10">
                                    <input type="text" name="Username" id="Username" class="form-control">
+                                    <div class="username-error val-error"></div>
                               </div>
                           </div>  
                        </div>

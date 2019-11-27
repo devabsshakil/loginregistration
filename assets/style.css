@@ -112,3 +112,7 @@ body{
     font-size: 25px;
     
 }
+.val-error{
+    color:red;
+    font-size: 12px;
+}
