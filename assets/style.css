@@ -19,26 +19,61 @@ body{
 .lg-inp-gp{
     display: flex;
     flex-direction: row;
+    margin-top: 30px;
 }
+
 .lg-inp-gp .i{
     width:5%;
+    color:#6c6c6c;
 }
 .lg-inp-gp .input-gp{
     width: 95%;
+}
+.lg-inp-gp .tgpass{
+    position: absolute;
+    right:0;
+    top:-5px;
+    padding: 3px;
+    color:#6c63ff;
 }
 .input-gp{
     position: relative;
 }
 .input-gp h4{
     position: absolute;
-    top:4px;
+    top:-6px;
     left: 10px;
+    color:#6c6c6c;
 }
-.i i{
-    font-size: 30px;
+.loginpage{
+   
+    width:100%;
+}
+.registerpage{
+    width:60%;
+}
+ .loginpage .card{
+    margin: 0 auto;
+    width:600px;
+    background: none;
+   
+}
+.lg-inp-gp{
+    padding: 20px;
+}
+.input-gp .l-inp-box{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left:0;
+    top:0;
+    background: none;
+}
+.lg-inp-gp.focus .i i{
+     color:#6c63ff;
     
 }
-.focus h4{
+.lg-inp-gp.focus h4{
     top:-30px;
     color:#6c63ff;
 }
@@ -54,4 +89,26 @@ body{
     border-bottom: 1px solid #6c63ff;
     margin-bottom: 15px;
         
+}
+.our-btn{
+    padding: 10px 25px;
+    background-image: linear-gradient(to right,#6c63ff,#4d47b3,#6c63ff);
+    background-size: 200%;
+    transition: .5s;
+    color:white;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+.our-btn:hover{
+    background-position: right;
+    color:white;
+    cursor: pointer;
+}
+.remeber-area{
+    padding: 10px;
+}
+.remeber-area #remember{
+    font-size: 25px;
+    
 }

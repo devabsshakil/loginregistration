@@ -16,9 +16,7 @@
    <div class="img-bg">
    <img src="assets/img/regbg.svg" alt="">
    </div>
-   <div class="container">
-       <div class="row">
-           <div class="col-md-8">
+   <div class="container loginpage">
                <div class="register-area mt-5 p-5">
                   <div class="card shadow-lg">
                       <div class="card-head">
@@ -33,7 +31,7 @@
                           <div class="i"><i class="fas fa-user"></i></div>
                           <div class="input-gp username-group">
                               <h4>Username</h4>
-                              <input type="text" name="username" id="username" class="l-inp-box ">
+                              <input type="text" name="username" id="username" class="l-inp-box">
                           </div>
                       </div>
                        <div class="lg-inp-gp">
@@ -43,21 +41,21 @@
                           <div class="input-gp password-group">
                               <h4>Password</h4>
                               <input type="password" name="password" id="password" class="l-inp-box">
-                              <div class="tgpass" id="tgpass"><button>Show</button></div>
+                              <div class="tgpass" id="tgpass"><i class="fas fa-eye"></i></div>
                              
                           </div>
                       </div>
-                       <input type="submit" value="Register Now" class="btn our-btn btn-success btn-lg">
+                     <div class="remeber-area">
+                          <label for="remember">Remember Me</label>
+                      <input type="checkbox" name="" id="remember">
+                     </div>
+                       <input type="submit" value="Register Now" class="btn our-btn btn-block btn-lg">
                    </form>
                       </div>
                   </div>
-                 
-                  
                </div>
            </div>
-       </div>
-   </div>
-   
+
    <!--jquery-->
    <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
    <!--popper js-->

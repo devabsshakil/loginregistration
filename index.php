@@ -16,9 +16,8 @@
    <div class="img-bg">
    <img src="assets/img/regbg.svg" alt="">
    </div>
-   <div class="container">
-       <div class="row">
-           <div class="col-md-8">
+   <div class="container registerpage">
+    
                <div class="register-area mt-5 p-5">
                   <div class="card shadow-lg">
                       <div class="card-head">
@@ -123,7 +122,7 @@
                               </div>
                           </div>  
                        </div>
-                       <input type="submit" value="Register Now" class="btn our-btn btn-success btn-lg">
+                       <input type="submit" value="Register Now" class="btn our-btn btn-block btn-lg">
                    </form>
                       </div>
                   </div>
@@ -131,9 +130,6 @@
                   
                </div>
            </div>
-       </div>
-   </div>
-   
    <!--jquery-->
    <script src="vendor/jquery/jquery-3.4.1.min.js"></script>
    <!--popper js-->
