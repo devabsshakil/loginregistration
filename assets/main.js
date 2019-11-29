@@ -24,31 +24,6 @@ $(document).ready(function(){
         }
         
     });
-    //for development
-    var namerregxp=/^[a-zA-Z .]+$/;
-    $('#name').blur(function(){
-        if(namerregxp.test( $('#name').val())){
-           
-        }else{
-            $('.name-error').text('Invaild Name');
-        }
-      
-    });
-    
-    
-     var userregxp=/^[a-zA-Z._0-9]+$/;
-    $('#Username').blur(function(){
-        if(userregxp.test( $('#Username').val())){
-           
-        }else{
-            $('.username-error').text('Invaild Username');
-           var userlength=str.length($('#Username').val());
-            if(userlength <6){
-                 $('.username-error').text('username limti 6');
-            }
-            
-        }
-      
-    });
+
     
 });

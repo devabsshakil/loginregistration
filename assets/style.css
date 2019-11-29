@@ -99,11 +99,13 @@ body{
     text-transform: uppercase;
     border: none;
     outline: none;
+    border-radius: 25px;
 }
 .our-btn:hover{
     background-position: right;
     color:white;
     cursor: pointer;
+    
 }
 .remeber-area{
     padding: 10px;
@@ -115,4 +117,8 @@ body{
 .val-error{
     color:red;
     font-size: 12px;
+}
+.ss-border{
+    border:2px solid green;
+    color:green;
 }

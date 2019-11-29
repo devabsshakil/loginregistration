@@ -57,6 +57,7 @@ $db=new Database();
                               </div>
                               <div class="col-10">
                                    <input type="email" name="Email" id="Email" class="form-control">
+                                   <div class="email-error val-error"></div>
                               </div>
                           </div>  
                        </div>
@@ -67,6 +68,7 @@ $db=new Database();
                               </div>
                               <div class="col-10">
                                    <input type="text" name="Phone" id="Phone" class="form-control">
+                                    <div class="phone-error val-error"></div>
                               </div>
                           </div>  
                        </div>
@@ -83,7 +85,9 @@ $db=new Database();
                                           <option value="PK">Pakistan</option>
                                            <option value="SL">Srilanka</option>
                                    </select>
+                                    <div class="country-error val-error"></div>
                               </div>
+                              
                           </div>  
                        </div>
                        <div class="form-group">
@@ -93,6 +97,7 @@ $db=new Database();
                               </div>
                               <div class="col-10">
                                  <textarea name="Address" id="Address" class="form-control"></textarea>
+                                 <div class="address-error val-error"></div>
                               </div>
                           </div>  
                        </div>
@@ -105,6 +110,7 @@ $db=new Database();
                                 <input type="radio" name="gender" id="gender">Male
                                  <input type="radio" name="gender" id="gender">Female
                               </div>
+                               <div class="gender-error val-error"></div>
                           </div>  
                        </div>
                         <div class="form-group">
@@ -114,6 +120,7 @@ $db=new Database();
                               </div>
                               <div class="col-10">
                                <input type="password" name="password" id="password" class="form-control">
+                                <div class="password-error val-error"></div>
                               </div>
                           </div>  
                        </div>
@@ -124,10 +131,11 @@ $db=new Database();
                               </div>
                               <div class="col-10">
                                <input type="password" name="conpass" id="conpass" class="form-control">
+                                <div class="con-pass-error val-error"></div>
                               </div>
                           </div>  
                        </div>
-                       <input type="submit" value="Register Now" class="btn our-btn btn-block btn-lg">
+                       <input type="submit" value="Register Now" class="btn our-btn btn-block btn-lg" id="regibtn">
                    </form>
                       </div>
                   </div>
@@ -143,5 +151,7 @@ $db=new Database();
    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
    <!--main js-->
    <script src="assets/main.js"></script>
+    <!--validation js-->
+    <script src="assets/validation.js"></script>
 </body>
 </html>
