@@ -104,7 +104,7 @@ $db=new Database();
                          <div class="form-group">
                           <div class="row">
                               <div class="col-2">
-                                   <label for="Address">Gender</label>
+                                   <label for="gender">Gender</label>
                               </div>
                               <div class="col-10">
                                 <input type="radio" name="gender" id="gender">Male
@@ -153,5 +153,7 @@ $db=new Database();
    <script src="assets/main.js"></script>
     <!--validation js-->
     <script src="assets/validation.js"></script>
+     <!--senddata js-->
+    <script src="assets/senddata.js"></script>
 </body>
 </html>

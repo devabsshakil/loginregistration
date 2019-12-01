@@ -1,5 +1,6 @@
-$(document).ready(function(){
-    var nameok = userok = emailok = phoneok = addressok = countryok = genderok = passok = conpassok = allisok=true;
+
+    var nameisok,userok,emailok,phoneok,addressok,countryok,genderok,passok,conpassok,allisok;
+    nameisok = userok = emailok = phoneok = addressok = countryok = genderok = passok = conpassok = allisok=true;
     //for Fullname
     var namerregxp=/^[a-zA-Z .]+$/;
     $('#name').blur(function(){
@@ -37,8 +38,12 @@ $(document).ready(function(){
      var emailregxp=/^[a-zA-Z._0-9]+@[a-z]+\.[a-z]{2,5}$/;
     $('#Email').blur(function(){
         if(emailregxp.test( $('#Email').val())){
+             $('#Email').addClass('ss-border');
+             $('.email-error').text('');
            emailok=true;
         }else{
+             $('.email-error').text('');
+            $('#Email').removeClass('ss-border');
             $('.email-error').text('Invaild Email address');
             emailok=false;
         }
@@ -50,8 +55,12 @@ $(document).ready(function(){
      var phoneregxp=/^[0-9]{7,15}$/;
     $('#Phone').blur(function(){
         if(phoneregxp.test( $('#Phone').val())){
-           phoneok=true;
+             $('#Phone').addClass('ss-border');
+             $('.phone-error').text('');
+            phoneok=true;
         }else{
+            $('.phone-error').text('');
+            $('#Phone').removeClass('ss-border');
             $('.phone-error').text('Invaild Phone number');
             phoneok=false;
         }
@@ -63,21 +72,41 @@ $(document).ready(function(){
      var addressregxp=/^[a-zA-Z0-9 _#/.,-:]+$/;
     $('#Address').blur(function(){
         if(addressregxp.test( $('#Address').val())){
+             $('#Address').addClass('ss-border');
+             $('.address-error').text('');
            addressok=true;
         }else{
+            $('.address-error').text('');
+            $('#Phone').removeClass('ss-border');
             $('.address-error').text('Invaild Address');
             addressok=false;
         }
 
       
     });
+ //for country
+$('#country').click(function(){
+    if($('#country').val == ' '){
+         $('.country-error').text('country must not be empty');
+        countryok=false;
+        
+    }else{
+         $('.country-error').text('');
+        countryok=true;
+    }
+});
+
     //for password
     //017888888
     $('#password').blur(function(){
         if($('#password').val().length <=6){
+             $('#password').removeClass('ss-border');
            $('.password-error').text('Password must be at least 6 chracter');
             passok=false;
         }else{
+             $('#password').addClass('ss-border');
+            $('.password-error').text('');
+           
             passok=true;
         }
 
@@ -86,8 +115,12 @@ $(document).ready(function(){
     //for con pass
      $('#conpass').blur(function(){
         if($('#password').val() == $('#conpass').val()){
+           $('.con-pass-error').text('');
+            $('#password').removeClass('ss-border');  
           conpassok=true;
         }else{
+             $('#conpass').addClass('ss-border');
+             $('.con-pass-error').text('');
              $('.con-pass-error').text('Password and Confirm Password not match');
             conpassok=false;
         }
@@ -99,32 +132,10 @@ $(document).ready(function(){
       if(inpname == ''){
                  $('.'+empclass).text(label+' must not be empty');
           allisok=false;
+            }else{
+                allisok=true;
             }
 
     }
-    $('#regibtn').click(function(e){
-        e.preventDefault();
-        var name=$('#name').val();
-        var Username=$('#Username').val();
-        var Email=$('#Email').val();
-        var phone=$('#Phone').val();
-        var country=$('#country').val();
-        var Address=$('#Address').val();
-        var gender=$('#gender').val();
-        var password=$('#password').val();
-        var conpass=$('#conpass').val();
-
-        empty(name,'Full Name','name-error');
-        empty(Username,'User Name','username-error');
-        empty(Email,'Email','email-error');
-        empty(phone,'phone','phone-error');
-        empty(country,'country','country-error');
-        empty(Address,'Address','address-error');
-        empty(gender,'gender','gender-error');
-        empty(password,'password','password-error');
-        empty(conpass,'confirm password','con-pass-error');
-
-    });
-    
-    
-});
+   
+   
